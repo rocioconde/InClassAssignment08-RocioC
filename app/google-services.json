@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "221253627743",
+    "firebase_url": "https://inclassassignment08-rocioc.firebaseio.com",
+    "project_id": "inclassassignment08-rocioc",
+    "storage_bucket": "inclassassignment08-rocioc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221253627743:android:60683ebfce44f1d3",
+        "android_client_info": {
+          "package_name": "com.example.android.inclassassignment08_rocioc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221253627743-f75qq761b8haiqb9sd9fefs90a6mb949.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo7LAw2o1R-3dTuzSRAdPT4Yn5sOGU3vg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
