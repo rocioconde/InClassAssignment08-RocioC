@@ -32,6 +32,18 @@ public class Family {
         return comingToTheParty;
     }
 
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setNumberOfMembers(int numberOfMembers) {
+        this.numberOfMembers = numberOfMembers;
+    }
+
+    public void setComingToTheParty(boolean comingToTheParty) {
+        this.comingToTheParty = comingToTheParty;
+    }
+
     @Override
     public String toString() {
         return "Family: " + lastName +
