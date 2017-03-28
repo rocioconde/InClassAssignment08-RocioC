@@ -1,12 +1,10 @@
 package com.example.android.inclassassignment08_rocioc;
 
-import java.io.Serializable;
-
 /**
  * Created by ccteuser on 3/27/17.
  */
 
-public class Family implements Serializable {
+public class Family {
 
     private String lastName;
     private int numberOfMembers;
@@ -16,6 +14,10 @@ public class Family implements Serializable {
         this.lastName = lastName;
         this.numberOfMembers = numberOfMembers;
         this.comingToTheParty = comingToTheParty;
+    }
+
+    public Family() {
+
     }
 
     public String getLastName() {
@@ -34,6 +36,6 @@ public class Family implements Serializable {
     public String toString() {
         return "Family: " + lastName +
                 "\nNumber of Members: " + numberOfMembers +
-                "\nIs this family coming to the party? " + comingToTheParty;
+                "\nComing to the party? " + comingToTheParty + "\n";
     }
 }

@@ -10,14 +10,11 @@ import android.widget.EditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
-
 public class SecondActivity extends AppCompatActivity {
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference familyRef = database.getReference("family");
 
-    private ArrayList<Family> familyList = new ArrayList<>();
 
     private EditText lastName;
     private EditText numberOfMembers;
@@ -42,10 +39,8 @@ public class SecondActivity extends AppCompatActivity {
         comingToTheParty = comingToParty.isChecked();
 
         Family f = new Family(familyLastName, numberOfMembers1, comingToTheParty);
-        Intent intent = new Intent();
-        intent.putExtra(Keys.FAMILY, f);
-        setResult(RESULT_OK, intent);
-        finish();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
 
         familyRef.push().setValue(new Family(familyLastName, numberOfMembers1, comingToTheParty));
     }
